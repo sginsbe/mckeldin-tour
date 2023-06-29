@@ -2522,15 +2522,16 @@ ICmBFwAAAAAgKYEXAAAAACApgRcAAAAAIKOI+AKX9qO5zBvPJAAAAABJRU5ErkJggg==">
 		c-0.21-1.09-0.59-2.15-1.09-3.21c0.52,0.18,1.07,0.27,1.64,0.24c0.18-0.01,0.35-0.04,0.52-0.05
 		C684.62,134.02,684.28,135.03,683.92,136.04z"/>
 </g>
-<a xlink:href="//lib.umd.edu">
-  <g id="newbooks" class="st1">
+  <g id="newbooks" class="st1" onclick="mapInfo("newbooks-info")">
 	<g id="Rectangle_6">
 		<g>
 			<rect x="595" y="508" class="st2" width="125" height="119"/>
 		</g>
 	</g>
 </g>
-</a>
+	<span class="map-info" id="newbooks-info"><p>McKeldin has a lot of books on a lot of different subjects, including many that you might use for a class assignment or to study a topic--but academic books are not the only kind here.</p>
+<p>This area holds our popular reading collection that highlights fiction and non-fiction you can borrow for leisure reading. Next to the popular reading, we display new additions to our collection.</p>
+<p>These shelves don't hold every single leisure reading book we have. There are many more on the shelves higher up in McKeldin, including YA books and graphic novels. </p></span> 
 <g id="circdesk" class="st1">
 	<g id="Rectangle_1">
 		<g>
@@ -2579,7 +2580,12 @@ uNMAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 716 115)">
 	</g>
 </g>
 </svg>
-
+<script>
+function mapInfo(x) {
+	var popup = document.getElementById(x);
+	popup.classlist.toggle("show");
+}
+</script>
 
   
 </html>
