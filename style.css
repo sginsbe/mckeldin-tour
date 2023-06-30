@@ -1,40 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 .map-info {
   visibility: hidden;
-  background-color: #555;
+  background-color: #303030;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
+  border-radius: 20px;
+  padding: 20px;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
 }
 
-.map-info::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.map-info p {
+	font-family: 'Open Sans', sans-serif;
 }
 
-.map-info .show {
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+.show {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
 }
 
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+.hide {
+	visibility: hidden;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+#floor-map {
+	width: 100%;
+	min-height: 1500px;
+	overflow: visible;
 }

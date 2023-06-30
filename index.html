@@ -2,14 +2,35 @@
 <head>
 <title>McKeldin Self-Guided Tour</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+function mapInfo(x) {
+	let popup = document.getElementById(x);
+	console.log(popup);
+	popup.classList.toggle('show');
+	let rect = document.querySelectorAll('rect');
+	for (let a = 0; a < rect.length; a++) {
+	rect[a].classList.toggle('hide');
+	}
+}
+function clear() {
+	clear = document.querySelectorAll('foreignObject');
+	for (let a = 0; a < clear.length; a++) {
+	clear[a].classList.toggle('hide');
+	}
+}
+</script>
 </head>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1400 790" style="enable-background:new 0 0 1400 790;" xml:space="preserve">
+<body>
+<h1>McKeldin Floor 1</h1>
+<div id="floor-map">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xhtml="http://www.w3.org/1999/xhtml" x="0px" y="0px"
+	 viewBox="0 0 1400 790" style="enable-background:new 0 0 1400 790;" xml:space="preserve" overflow="visible" pointer-events="all" onclick="clear()">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{opacity:0.5;enable-background:new    ;}
+	.st1{fill: #EC6D6D; fill-opacity: 0.5;}
 	.st2{fill:#EC6D6D;}
-	.st3{opacity:0.5;}
+	.st3{fill: #EC6D6D; fill-opacity: 0.5;}
+	.st4{opacity:1.0;}
 </style>
 <g id="Layer_0_xA0_Image_00000104703455790624326980000006913639323571644086_">
 	
@@ -2526,57 +2547,60 @@ ICmBFwAAAAAgKYEXAAAAACApgRcAAAAAIKOI+AKX9qO5zBvPJAAAAABJRU5ErkJggg==">
 		c-0.21-1.09-0.59-2.15-1.09-3.21c0.52,0.18,1.07,0.27,1.64,0.24c0.18-0.01,0.35-0.04,0.52-0.05
 		C684.62,134.02,684.28,135.03,683.92,136.04z"/>
 </g>
-  <g id="newbooks" class="st1" onclick="mapInfo('newbooks-info')">
+<g pointer-events="none"><foreignObject x="595" y="508" width="40%" height="95%"><span class="st4 map-info" id="newbooks-info"><p>McKeldin has a lot of books on a lot of different subjects, including many that you might use for a class assignment or to study a topic--but academic books are not the only kind here.</p>
+<p>This area holds our popular reading collection that highlights fiction and non-fiction you can borrow for leisure reading. Next to the popular reading, we display new additions to our collection.</p>
+<p>These shelves don't hold every single leisure reading book we have. There are many more on the shelves higher up in McKeldin, including YA books and graphic novels. </p></span></foreignObject></g>
+<g id="newbooks" class="st1" onclick="mapInfo('newbooks-info')">
 	<g id="Rectangle_6">
 		<g>
 			<rect x="595" y="508" class="st2" width="125" height="119"/>
 		</g>
 	</g>
 </g> 
-<foreignObject><span class="map-info" id="newbooks-info"><p>McKeldin has a lot of books on a lot of different subjects, including many that you might use for a class assignment or to study a topic--but academic books are not the only kind here.</p>
-<p>This area holds our popular reading collection that highlights fiction and non-fiction you can borrow for leisure reading. Next to the popular reading, we display new additions to our collection.</p>
-<p>These shelves don't hold every single leisure reading book we have. There are many more on the shelves higher up in McKeldin, including YA books and graphic novels. </p></span></foreignObject>
-<g id="circdesk" class="st1">
+<g pointer-events="none"><foreignObject x="742" y="365" width="40%" height="95%"><span class="st4 map-info" id="circdesk-info"><h2>Comprehensive Library Help</h2>
+<p>At the UMD libraries, we have service points (desks) to help with all your basic needs: borrowing books, getting help with printing or scanning, checking lost and found, or even if you just need directions on getting to class or how to log in to a computer. In McKeldin Library, the main service point is Library Services Desk.</p> 
+<p>The Library Services Desk is open whenever the library is open, and there's always someone working who can help answer your questions. </p>
+<h2>Research Help</h2>
+<p>Besides getting info about the library, you can also visit the Library Services Desk to ask for help with classwork that requires you to do research. Librarians are available who are trained in every subject area. They will work one-on-one with you to understand your project and advise on the best way to access and search for scholarly sources.</p>
+<h2>Help in Different Formats</h2>
+<p>You can reach the library for anything--even research help--in a number of different ways. You can always come to the desk in person, but you can also call us, send us an email, or even use our online chat to talk directly to someone who can help.</p></span></foreignObject></g>
+<g id="circdesk" class="st1" onclick="mapInfo('circdesk-info')">
 	<g id="Rectangle_1">
 		<g>
 			<rect x="742" y="365" class="st2" width="311.87" height="150.35"/>
 		</g>
 	</g>
 </g>
-<g id="onebutton" class="st1">
+<g pointer-events="none"><foreignObject x="374" y="361" width="40%" height="95%"><span class="st4 map-info" id="onebutton-info"><p>A One Button Studio is a simplified video and audio recording studio designed for creating lectures, presentations, demos, training videos, and so on. The setup includes all necessary technology and activates with a single button press, making it easy for anyone to use without assistance. There are a number of One Button Studios on campus, including this one in McKeldin Library.</p></span></foreignObject></g>
+<g id="onebutton" class="st1" onclick="mapInfo('onebutton-info')">
 	<g id="Rectangle_2">
 		<g>
 			<rect x="374" y="361" class="st2" width="51" height="68"/>
 		</g>
 	</g>
 </g>
-<g id="backarea" class="st3">
-	
-		<image style="overflow:visible;" width="229" height="239" id="Rectangle_3_xA0_Image" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOUAAADvCAYAAAANUhNwAAAACXBIWXMAAAsSAAALEgHS3X78AAAC
-3klEQVR4nO3VQQ2AMBBFwZYgAZtVU5t4AAVcyTvMSNifl533Ws8AMg5TQIsoIUaUECNKiBElxIgS
-YkQJMaKEGFFCjCghRpQQI0qIESXEiBJiRAkxooQYUUKMKCFGlBAjSogRJcSIEmJECTGihBhRQowo
-IUaUECNKiBElxIgSYkQJMaKEGFFCjCghRpQQI0qIESXEiBJiRAkxooQYUUKMKCFGlBAjSogRJcSI
-EmJECTGihBhRQowoIUaUECNKiBElxIgSYkQJMaKEGFFCjCghRpQQI0qIESXEiBJiRAkxooQYUUKM
-KCFGlBAjSogRJcSIEmJECTGihBhRQowoIUaUECNKiBElxIgSYkQJMaKEGFFCjCghRpQQI0qIESXE
-iBJiRAkxooQYUUKMKCFGlBAjSogRJcSIEmJECTGihBhRQowoIUaUECNKiBElxIgSYkQJMaKEGFFC
-jCghRpQQI0qIESXEiBJiRAkxooQYUUKMKCFGlBAjSogRJcSIEmJECTGihBhRQowoIUaUECNKiBEl
-xIgSYkQJMaKEGFFCjCghRpQQI0qIESXEiBJiRAkxooQYUUKMKCFGlBAjSogRJcSIEmJECTGihBhR
-QowoIUaUECNKiBElxIgSYkQJMaKEGFFCjCghRpQQI0qIESXEiBJiRAkxooQYUUKMKCFGlBAjSogR
-JcSIEmJECTGihBhRQowoIUaUECNKiBElxIgSYkQJMaKEGFFCjCghRpQQI0qIESXEiBJiRAkxp0H4
-27X3dPRvPiXEiBJiRAkxooQYUUKMKCFGlBAjSogRJcSIEmJECTGihBhRQowoIUaUECNKiBElxIgS
-YkQJMaKEGFFCjCghRpQQI0qIESXEiBJiRAkxooQYUUKMKCFGlBAjSogRJcSIEmJECTGihBhRQowo
-IUaUECNKiBElxIgSYkQJMaKEGFFCjCghRpQQI0qIESXEiBJiRAkxooQYUUKMKKFkjPECSisF4LAt
-uNMAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 716 115)">
-	</image>
+<g pointer-events="none"><foreignObject x="716" y="115" width="40%" height="95%"><span class="st4 map-info" id="backarea-info"><p>Besides offering space to study, this area of the first floor is where we store newspapers and periodicals (a word libraries use for magazines and academic journals). If you're looking for the latest issue of a popular newspaper or magazine, you can check here.</p>
+
+<p>The desks with monitors and dividers are our media viewing area, where people can watch DVDs or Blurays if they don't have their own player. The library has a collection of popular movies and TV shows you can borrow on DVD or Bluray just like you would borrow a book.</p></span></foreignObject>	</g>
+<g id="backarea" class="st3" onclick="mapInfo('backarea-info')">
+<g id="Rectangle_6">
+		<g>
+			<rect x="716" y="115" width="232" height="175"/>
+		</g>
+	</g>
+
 </g>
-<g id="footnotes" class="st1">
+<g pointer-events="none"><foreignObject x="757" y="609" width="40%" height="95%"><span class="st4 map-info" id="footnotes-info"><p>The library has its own cafe run by campus called Footnotes. It's a great place to study, meet up with friends, or just grab coffee or a snack while doing work in McKeldin.</p>
+<p>The wall covered in plants is called a biowall, and everything on it is a living plant that needs water and sunlight. The biowall helps demonstrate the Libraries' commitment to sustainability and to offering creative, interesting spaces to serve students.</p></span></foreignObject></g>
+<g id="footnotes" class="st1" onclick="mapInfo('footnotes-info')">
 	<g id="Rectangle_4">
 		<g>
 			<rect x="757" y="609.34" class="st2" width="166" height="79.31"/>
 		</g>
 	</g>
 </g>
-<g id="lounge" class="st1">
+<g pointer-events="none"><foreignObject x="800" y="565" width="40%" height="95%"><span class="st4 map-info" id="lounge-info"><p>The lounge connected to Footnotes Cafe is a good place to study, meet with friends, or enjoy something from the cafe. The large white egg-shaped chairs in this room are napping pods that include features like a reclining chair, a privacy visor, a timer, speakers that play music, and a light that mimics sunrise. Students can use the nap pods to take a break between classes or while working at the library, and they help decrease student stress and fatigue.</p></span></foreignObject></g> 
+<g id="lounge" class="st1" onclick="mapInfo('lounge-info')">
 	<g id="Rectangle_5">
 		<g>
 			<rect x="940" y="565" class="st2" width="113" height="126"/>
@@ -2584,13 +2608,6 @@ uNMAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 716 115)">
 	</g>
 </g>
 </svg>
-
-<script>
-function mapInfo(x) {
-	var popup = document.getElementById(x);
-	popup.classlist.toggle("show");
-}
-</script>
-
-  
+</div>
+ </body> 
 </html>
