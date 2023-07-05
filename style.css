@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .map-info {
   visibility: hidden;
   background-color: #303030;
@@ -12,18 +16,15 @@
 }
 
 .map-info p {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
 
 h2 {
-	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	font-size: 20px;
 }
 
 h1 {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
 	text-align: center;
 }
@@ -61,3 +62,17 @@ h1 {
 #circdesk-info h2 {
 	font-size: 18px;
 }
+
+#map-select-container {
+	display: flex;
+	justify-content: center;
+}
+
+#map-select {
+	font-size: 30px;
+}
+
+#floors {
+	font-size: 25px;
+	padding: 5px;
+	}
