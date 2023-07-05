@@ -5,17 +5,21 @@
 <script type="text/javascript">
 function mapInfo(x) {
 	let popup = document.getElementById(x);
-	console.log(popup);
 	popup.classList.toggle('show');
+	popup.setAttribute('pointer-events', 'all');
+	let clear = document.getElementById('clear-container');
+	clear.setAttribute('pointer-events', 'all');
 	let rect = document.querySelectorAll('rect');
 	for (let a = 0; a < rect.length; a++) {
 	rect[a].classList.toggle('hide');
-	}
-}
-function clear() {
-	clear = document.querySelectorAll('foreignObject');
-	for (let a = 0; a < clear.length; a++) {
-	clear[a].classList.toggle('hide');
+	rect[a].setAttribute('pointer-events','none');
+	};
+	clear.onclick = function () {
+	popup.classList.toggle('show');
+	for (let a = 0; a < rect.length; a++) {
+	rect[a].classList.toggle('hide');
+	rect[a].setAttribute('pointer-events','all');
+	};
 	}
 }
 </script>
@@ -24,7 +28,7 @@ function clear() {
 <h1>McKeldin Floor 1</h1>
 <div id="floor-map">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xhtml="http://www.w3.org/1999/xhtml" x="0px" y="0px"
-	 viewBox="0 0 1400 790" style="enable-background:new 0 0 1400 790;" xml:space="preserve" overflow="visible" pointer-events="all" onclick="clear()">
+	 viewBox="0 0 1400 790" style="enable-background:new 0 0 1400 790;" xml:space="preserve" overflow="visible" pointer-events="all">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 	.st1{fill: #EC6D6D; fill-opacity: 0.5;}
@@ -32,7 +36,7 @@ function clear() {
 	.st3{fill: #EC6D6D; fill-opacity: 0.5;}
 	.st4{opacity:1.0;}
 </style>
-<g id="Layer_0_xA0_Image_00000104703455790624326980000006913639323571644086_">
+<g id="map">
 	
 		<image style="overflow:visible;" width="1400" height="790" id="Layer_0_xA0_Image" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABXgAAAMWCAYAAABLJe4nAAAACXBIWXMAAAsSAAALEgHS3X78AAAg
 AElEQVR4nOzdCXwTdf7/8U9pKdBS7ktgQSnCclQ5PDgUUAFBYAUvwL8nlyCKsgKuAuoKuiKwKseC
@@ -2550,14 +2554,14 @@ ICmBFwAAAAAgKYEXAAAAACApgRcAAAAAIKOI+AKX9qO5zBvPJAAAAABJRU5ErkJggg==">
 <g pointer-events="none"><foreignObject x="595" y="508" width="40%" height="95%"><span class="st4 map-info" id="newbooks-info"><p>McKeldin has a lot of books on a lot of different subjects, including many that you might use for a class assignment or to study a topic--but academic books are not the only kind here.</p>
 <p>This area holds our popular reading collection that highlights fiction and non-fiction you can borrow for leisure reading. Next to the popular reading, we display new additions to our collection.</p>
 <p>These shelves don't hold every single leisure reading book we have. There are many more on the shelves higher up in McKeldin, including YA books and graphic novels. </p></span></foreignObject></g>
-<g id="newbooks" class="st1" onclick="mapInfo('newbooks-info')">
+<g id="newbooks" class="st1">
 	<g id="Rectangle_6">
 		<g>
-			<rect x="595" y="508" class="st2" width="125" height="119"/>
+			<rect x="595" y="508" class="st2" width="125" height="119" onclick="mapInfo('newbooks-info')"/>
 		</g>
 	</g>
 </g> 
-<g pointer-events="none"><foreignObject x="600" y="150" width="40%" height="95%"><span class="st4 map-info" id="circdesk-info"><h2>Comprehensive Library Help</h2>
+<g pointer-events="none"><foreignObject x="600" y="0" width="40%" height="95%"><span class="st4 map-info" id="circdesk-info"><h2>Comprehensive Library Help</h2>
 <p>At the UMD libraries, we have service points (desks) to help with all your basic needs: borrowing books, getting help with printing or scanning, checking lost and found, or even if you just need directions on getting to class or how to log in to a computer. In McKeldin Library, the main service point is Library Services Desk.</p> 
 <p>The Library Services Desk is open whenever the library is open, and there's always someone working who can help answer your questions. </p>
 <h2>Research Help</h2>
@@ -2606,6 +2610,9 @@ ICmBFwAAAAAgKYEXAAAAACApgRcAAAAAIKOI+AKX9qO5zBvPJAAAAABJRU5ErkJggg==">
 			<rect x="940" y="565" class="st2" width="113" height="126"/>
 		</g>
 	</g>
+</g>
+<g>
+<foreignObject id="clear-container" pointer-events="none" x="0" y="0" width="100%" height="100%" opacity="0.0"><div id="clear"></div></foreignObject>
 </g>
 </svg>
 </div>
