@@ -13,11 +13,13 @@
 
 .map-info p {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 }
 
 h2 {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold
+	font-weight: bold;
+	font-size: 20px;
 }
 
 h1 {
@@ -41,14 +43,6 @@ h1 {
 	overflow: visible;
 }
 
-.disabled {
-	pointer-events: none;
-}
-
-.enabled {
-	pointer-events: auto;
-}
-
 #clear {
 	position: fixed;
 	width: 100%;
@@ -58,4 +52,12 @@ h1 {
 	right: 0;
 	bottom: 0;
 	background-color: rgba(0,0,0,0.5);
+}
+
+#circdesk-info {
+	font-size: 14px;
+}
+
+#circdesk-info h2 {
+	font-size: 18px;
 }
