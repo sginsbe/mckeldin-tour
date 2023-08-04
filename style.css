@@ -4,6 +4,12 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+#container {
+	width: 75%;
+	margin: auto;
+	padding-top: 3em;
+}
+	
 .map-info {
   visibility: hidden;
   background-color: #303030;
