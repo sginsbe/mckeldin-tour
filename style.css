@@ -12,6 +12,7 @@
 
 foreignObject.info {
 	width: 70%;
+	overflow: visible;
 }
 
 foreignObject.right {
@@ -29,6 +30,10 @@ foreignObject.circ {
 #circdesk-info h2 {
 	font-size: 1.5rem;
 }
+
+#portico-info h2 {
+	font-size 1.5rem;
+}
 }
 
 @media screen and (min-width:601px) {
@@ -42,6 +47,10 @@ foreignObject.circ {
 }
 
 #circdesk-info h2 {
+	font-size: 17px;
+}
+
+#portico-info h2 {
 	font-size: 17px;
 }
 }
