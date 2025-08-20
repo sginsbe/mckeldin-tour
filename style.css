@@ -4,6 +4,48 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+@media screen and (max-width:600px) {
+
+.map-info p {
+	font-size: 1.5rem;
+}
+
+foreignObject.info {
+	width: 70%;
+}
+
+foreignObject.right {
+	transform: translateX(-40%);
+}
+
+foreignObject.center {
+	transform: translate(-20%,-20%);
+}
+
+foreignObject.circ {
+	height: 150%;
+}
+
+#circdesk-info h2 {
+	font-size: 1.5rem;
+}
+}
+
+@media screen and (min-width:601px) {
+
+.map-info p {
+	font-size: 16px;
+}
+
+#circdesk-info {
+	font-size: 13px;
+}
+
+#circdesk-info h2 {
+	font-size: 17px;
+}
+}
+
 #container {
 	width: 75%;
 	margin: auto;
@@ -19,10 +61,6 @@
   padding: 20px;
   position: absolute;
   z-index: 1;
-}
-
-.map-info p {
-	font-size: 16px;
 }
 
 h2 {
@@ -49,6 +87,10 @@ h1 {
 	overflow: visible;
 }
 
+svg {
+	width: 100%;
+}
+
 #clear {
 	position: fixed;
 	width: 100%;
@@ -58,14 +100,6 @@ h1 {
 	right: 0;
 	bottom: 0;
 	background-color: rgba(0,0,0,0.5);
-}
-
-#circdesk-info {
-	font-size: 13px;
-}
-
-#circdesk-info h2 {
-	font-size: 17px;
 }
 
 #map-select-container {
