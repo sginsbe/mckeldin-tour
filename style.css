@@ -11,8 +11,10 @@
 }
 
 foreignObject.info {
+	position: relative;
 	width: 70%;
 	overflow: visible;
+	z-index: 2;
 }
 
 foreignObject.right {
@@ -112,6 +114,7 @@ svg {
 }
 
 #map-select-container {
+	z-index: 1;
 	display: flex;
 	justify-content: center;
 	margin-top: 100px;
